@@ -8,7 +8,7 @@ class BigFish(Fish):
         self.state = ['search']
         super().__init__(parent1, parent2, 2400, 1.2, image='fishClipart2.png')
         self.reproduction_cooldown = 3000
-        self.age = 11000
+        self.age = random.randrange(7000, 9000)
 
     def act(self, input):
         self.age -= 1

@@ -8,7 +8,7 @@ import numpy as np
 class SmallFish(Fish):
     def __init__(self, parent1=None, parent2=None):
         self.state = ['search']
-        super().__init__(parent1, parent2, 800, 2.8, image='TinyFish.jpg')
+        super().__init__(parent1, parent2, 800, 2.8, image='TinyFish.png')
         self.reproduction_cooldown = 600
         self.age = 3000
 
