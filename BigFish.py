@@ -38,7 +38,7 @@ class BigFish(Fish):
             self.state = ['recenter', 'up']
         else:
             nearest_prey = self.nearest(input[1])
-            if self.hunger < 1600 and nearest_prey[0] < 400:
+            if self.hunger < 1600 and nearest_prey[0] < 250:
                 self.target_dir = nearest_prey[1]
                 self.state = ['hunt']
                 return

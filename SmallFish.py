@@ -42,7 +42,7 @@ class SmallFish(Fish):
             self.state = ['recenter', 'up']
         else:
             nearest_predator = self.nearest(input[2])
-            if nearest_predator[0] < 150:
+            if nearest_predator[0] < 100:
                 self.target_dir = np.pi + nearest_predator[1]
                 self.state = ['run']
                 return
